@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>World Countries Data</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <style>
+
+        body{
+            text-align: center;
+            background-color: rgba(179, 168, 168, 0.151);
+            
+           box-shadow:inset 0 -10px 10px -10px rgba(179, 168, 168);
+           padding-bottom: 20px;
+        }
+        h2{
+            font-size:40px;
+            color:rgb(228, 179, 20);
+            line-height: 2px;
+        }
+        .graph-buttons{
+            background-color: white;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding:15px 0px 0px;
+            border-radius : 2px;
+            box-shadow:0px 1px 10px rgba(138, 135, 135, 0.9);
+        }
+        button{
+            background-color: rgb(228, 179, 20);
+            border: none;
+            padding: 6px 10px;
+            margin: 0px 4px -10px;
+            border-radius : 2px;
+        }
+        .graphs{
+            margin:auto;
+        }
+        h4{
+           line-height: 40px;
+           margin: 10px;
+           font-weight: lighter;
+        }
+        table{
+            margin: auto;
+            width: 80%;
+            text-align: left;
+        }
+       table td {
+           padding: 7px 0px;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <header id="countries">
+        <h2>World Countries Data</h2>
+        <p class="subtitle">Currently, we have <span class="cCount"></span>countries</p>
+        <p class="feedback"></p>
+    </header>
+    <main>
+
+        <div class="wrapper">
+            <div class="graph-buttons">
+                <button class="population">Population</button>
+                <button class="languages">Languages</button>
+                <h4 class="graph-title">gfgu</h4>
+            </div>
+            <h4 class="graph-title"></h4>
+            <div class="graphs">
+                <div class="graph-wrapper" id="stat"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="countries.js"></script>
+    
+
+</body>
+
+</html>
